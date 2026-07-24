@@ -35,7 +35,7 @@
       width: 100%;
     }
 
-    /* 좌측 에디터 패널 (화이트 스타일) */
+    /* 좌측 에디터 패널 */
     .editor-panel {
       flex: 1;
       min-width: 340px;
@@ -48,7 +48,6 @@
       overflow-y: auto;
     }
 
-    /* 스크롤바 스타일링 */
     .editor-panel::-webkit-scrollbar {
       width: 6px;
     }
@@ -131,7 +130,6 @@
       flex: 1;
     }
 
-    /* 툴바 버튼 스타일 */
     .style-toolbar {
       display: flex;
       gap: 6px;
@@ -162,7 +160,6 @@
       color: #ffffff;
     }
 
-    /* 커스텀 업로드 버튼 */
     .file-input-wrapper {
       position: relative;
       display: inline-block;
@@ -195,7 +192,6 @@
       border-color: #64748b;
     }
 
-    /* 다운로드 버튼 */
     .btn-download {
       width: 100%;
       padding: 14px;
@@ -234,7 +230,6 @@
       font-weight: 600;
     }
 
-    /* 작업대 느낌의 미리보기 프레임 */
     .preview-stage {
       width: 100%;
       display: flex;
@@ -247,7 +242,6 @@
       min-height: 600px;
     }
 
-    /* 핸드아웃 카드 공통 스타일 */
     .handout-card {
       width: 420px;
       min-height: 550px;
@@ -284,7 +278,7 @@
       transition: all 0.1s;
     }
 
-    /* --- 이미지 기반 테마 --- */
+    /* --- 원본 파일명 기반 테마 --- */
     .handout-card.theme-img1 {
       background-image: url('pngwing.com.png');
       color: #2b1d0c;
@@ -294,6 +288,18 @@
     .handout-card.theme-img2 {
       background-image: url('pngwing.com (1).png');
       color: #3d2b1f;
+      font-family: 'Nanum Myeongjo', serif;
+    }
+
+    .handout-card.theme-img3 {
+      background-image: url('49dba705-c254-47f7-bef0-872f8f85c22c.png');
+      color: #2b1d0c;
+      font-family: 'Nanum Myeongjo', serif;
+    }
+
+    .handout-card.theme-img4 {
+      background-image: url('569983ae-446c-49a4-8ffd-c9386f4c66b8.png');
+      color: #2b1d0c;
       font-family: 'Nanum Myeongjo', serif;
     }
   </style>
@@ -307,8 +313,10 @@
       <div class="form-group">
         <label for="theme-select">종이 질감 디자인 선택</label>
         <select id="theme-select">
-          <option value="theme-img1">📜 테마 1: 낡은 양치피지 (pngwing.com)</option>
-          <option value="theme-img2">📜 테마 2: 번진 클래식 종이 (pngwing.com (1))</option>
+          <option value="theme-img1">📜 테마 1: pngwing.com.png</option>
+          <option value="theme-img2">📜 테마 2: pngwing.com (1).png</option>
+          <option value="theme-img3">📜 테마 3: 49dba7...c22c.png</option>
+          <option value="theme-img4">📜 테마 4: 569983...66b8.png</option>
         </select>
       </div>
 
